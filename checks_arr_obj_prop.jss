@@ -26,7 +26,7 @@ var contacts = [
     }
 ];
 
-// solution
+// solution1
 function lookUpProfile(name, prop){
 for(var i =0;i<contacts.length;i++){
     if(name==contacts[i].firstName){
@@ -40,10 +40,26 @@ for(var i =0;i<contacts.length;i++){
              return "No such property";
          }
     }}
-    return "No such contact";
-         
-// End of the solution
+    return "No such contact";         
 }
+// End of the solution1
+
+// solution2 with obj.hasOwnProperty(prop)
+//Officially recommended
+/*
+for (var x = 0; x < contacts.length; x++){
+    if (contacts[x].firstName === name) {
+        if (contacts[x].hasOwnProperty(prop)) {
+            return contacts[x][prop];
+        } else {
+            return "No such property";
+        }
+    }
+}
+return "No such contact";
+*/
+
+//End of the solution2
 
 // Tasks
 lookUpProfile("Kristian", "lastName");
