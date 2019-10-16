@@ -1,2 +1,2 @@
 # JS-solutions
-solutions for FDCs 
+solutions for FCC
