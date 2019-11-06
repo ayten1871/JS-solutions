@@ -1,0 +1,26 @@
+function bouncer(arr) {
+  var result=[];
+  for(let i=0;i<arr.length;i++){
+if(typeof arr[i]=="string"&&arr[i].length>0){
+result.push(arr[i]);
+//console.log(arr[i]);
+}else if(typeof arr[i]=="number"&&arr[i]>0||arr[i]<0){
+  result.push(arr[i]);
+}
+ }
+ return result;
+}
+
+
+tasks:
+
+bouncer([7, "ate", "", false, 9]) should return [7, "ate", 9].
+
+bouncer(["a", "b", "c"]) should return ["a", "b", "c"].
+
+bouncer([false, null, 0, NaN, undefined, ""]) should return [].
+
+bouncer([1, null, NaN, 2, undefined]) should return [1, 2].
+
+#FCC
+#algorithm
