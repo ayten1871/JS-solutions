@@ -24,3 +24,10 @@ bouncer([1, null, NaN, 2, undefined]) should return [1, 2].
 
 #FCC
 #algorithm
+
+/* 
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+
+*/
