@@ -1,0 +1,41 @@
+function mutation(arr) {
+let firstString=arr[0].toLowerCase().split("");
+let secondString=arr[1].toLowerCase().split("");
+for (let i=0;i<secondString.length;i++){
+if(firstString.includes(secondString[i])!==true){
+return false;
+}
+}
+return true;}
+
+*/
+#FCC
+#algrithm
+/*
+
+//.indexOf() also works
+
+tasks:
+mutation(["hello", "hey"]) should return false.
+
+mutation(["hello", "Hello"]) should return true.
+
+mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]) should return true.
+
+mutation(["Mary", "Army"]) should return true.
+
+mutation(["Mary", "Aarmy"]) should return true.
+
+mutation(["Alien", "line"]) should return true.
+
+mutation(["floor", "for"]) should return true.
+
+mutation(["hello", "neo"]) should return false.
+
+mutation(["voodoo", "no"]) should return false.
+
+mutation(["ate", "date"] should return false should return false.
+
+mutation(["Tiger", "Zebra"]) should return false.
+
+mutation(["Noel", "Ole"]) should return true.
